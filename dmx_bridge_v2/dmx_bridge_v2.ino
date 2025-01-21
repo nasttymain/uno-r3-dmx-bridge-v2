@@ -45,7 +45,7 @@ void setup() {
 
 void loop() {
 
-  while(){
+  while(1){
     if(topc.available()){
       pqueue = topc.read();
       if(pqueue & 0b10000000 == 0b00000000){
