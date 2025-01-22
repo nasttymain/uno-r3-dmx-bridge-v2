@@ -52,6 +52,7 @@ void loop() {
         // channel
         if(pqueue == 127){
           // align signal
+          dmx_master.setChannelRange(0, DMX_MASTER_CHANNELS, 0)
         }else{
           ch = pqueue;
         }
